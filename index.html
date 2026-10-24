@@ -1,760 +1,223 @@
 <!DOCTYPE html>
 <html lang="vi" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sầu Riêng T&T - Công Ty TNHH Sầu Riêng T&T | Chuẩn Xuất Khẩu</title>
-    <!-- Meta SEO & Social Sharing -->
-    <meta name="description" content="Sầu riêng tách hạt cấp đông siêu tốc IQF -40°C từ Công Ty TNHH Sầu Riêng T&T. 100% chín cây tự nhiên, múi vàng cơm dẻo, ngọt béo đậm đà, bao ăn 1 đổi 1 tận nơi.">
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        durian: {
-                            50: '#fefce8',
-                            100: '#fef9c3',
-                            200: '#fef08a',
-                            300: '#fde047',
-                            400: '#facc15',
-                            500: '#eab308',
-                            600: '#ca8a04',
-                            700: '#a16207',
-                            800: '#854d0e',
-                            900: '#713f12',
-                        },
-                        leaf: {
-                            600: '#15803d',
-                            700: '#166534',
-                            800: '#14532d',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sầu Riêng T&T - Sầu Riêng Tách Hạt Cấp Đông Chuẩn Xuất Khẩu</title>
+  <meta name="description" content="Chuyên cung cấp sầu riêng Ri6, Monthong chín cây tách múi cấp đông sâu IQF -40°C. Thơm béo dẻo ngọt, giữ trọn 99% dinh dưỡng, giao hàng hỏa tốc trong 2h.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#F59E0B',
+              darkgold: '#D97706',
+              green: '#047857',
+              darkgreen: '#064E3B',
+              lightgreen: '#ECFDF5',
+              cream: '#FFFBEB'
             }
+          }
         }
-    </script>
+      }
+    }
+  </script>
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .gold-gradient {
-            background: linear-gradient(135deg, #facc15 0%, #ca8a04 100%);
-        }
-        .hero-pattern {
-            background-color: #14532d;
-            background-image: radial-gradient(rgba(250, 204, 21, 0.15) 1px, transparent 0);
-            background-size: 24px 24px;
-        }
-        /* Custom floating button animation */
-        @keyframes pulse-custom {
-            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(22, 101, 52, 0.6); }
-            50% { transform: scale(1.05); box-shadow: 0 0 0 14px rgba(22, 101, 52, 0); }
-        }
-        .btn-floating {
-            animation: pulse-custom 2.2s infinite;
-        }
-    </style>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .hero-bg {
+      background: linear-gradient(135deg, rgba(6, 78, 59, 0.94) 0%, rgba(4, 120, 87, 0.88) 100%),
+                  url('https://images.unsplash.com/photo-1587393855524-087f83d95bc9?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    }
+  </style>
 </head>
-<body class="bg-amber-50/40 text-stone-800 antialiased selection:bg-durian-400 selection:text-stone-900">
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-brand-gold selection:text-white">
 
-    <!-- Top Notice Bar -->
-    <div class="bg-durian-400 text-stone-900 text-xs sm:text-sm font-semibold py-2 px-4 text-center">
-        <span>⚡ ƯU ĐÃI TUẦN LỄ RA MẮT: Giảm ngay 10% đơn đầu tiên + Tặng kèm túi giữ nhiệt cho đơn từ 2kg!</span>
-    </div>
+  <!-- ==================== FACEBOOK JAVASCRIPT SDK ==================== -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" 
+    src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v19.0">
+  </script>
 
-    <!-- Navigation Header -->
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-amber-100 transition-all">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Brand Logo -->
-            <a href="#" class="flex items-center gap-2 group">
-                <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-leaf-700 to-durian-400 flex items-center justify-center text-white text-2xl shadow-md group-hover:scale-105 transition">
-                    🥭
-                </div>
-                <div>
-                    <span class="text-2xl font-black tracking-tight text-leaf-800">SẦU RIÊNG <span class="text-durian-600">T&T</span></span>
-                    <p class="text-[10px] tracking-widest uppercase font-semibold text-stone-500">Chuẩn Xuất Khẩu IQF</p>
-                </div>
-            </a>
-
-            <!-- Desktop Nav Links -->
-            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-stone-600">
-                <a href="#loi-ich" class="hover:text-leaf-700 transition">Tại sao chọn TT?</a>
-                <a href="#quy-trinh" class="hover:text-leaf-700 transition">Quy trình cấp đông</a>
-                <a href="#san-pham" class="hover:text-leaf-700 transition">Bảng giá & Sản phẩm</a>
-                <a href="#cam-ket" class="hover:text-leaf-700 transition">Cam kết</a>
-                <a href="#feedback" class="hover:text-leaf-700 transition">Đánh giá</a>
-            </nav>
-
-            <!-- CTA Hotline / Order -->
-            <div class="flex items-center gap-3">
-                <a href="https://zalo.me/0328970702" target="_blank" class="hidden sm:flex items-center gap-2 text-stone-700 bg-amber-100 hover:bg-amber-200 px-4 py-2.5 rounded-xl font-bold text-sm transition">
-                    <i class="fa-solid fa-comment-dots text-leaf-700"></i>
-                    <span>Zalo: 032 8970702</span>
-                </a>
-                <a href="#dat-hang" class="gold-gradient text-stone-900 font-bold px-5 py-2.5 rounded-xl text-sm shadow hover:shadow-lg transition transform hover:-translate-y-0.5">
-                    Đặt Mua Ngay
-                </a>
-            </div>
+  <!-- ==================== HEADER / THANH ĐIỀU HƯỚNG ==================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur shadow-sm border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-brand-darkgreen to-brand-green flex items-center justify-center text-amber-300 text-xl font-black shadow-md">
+          <i class="fas fa-seedling"></i>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero-pattern text-white py-16 lg:py-24 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Left Column: Value Proposition -->
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-durian-300 text-xs sm:text-sm font-medium">
-                        <span class="w-2 h-2 rounded-full bg-durian-400 animate-ping"></span>
-                        Cấp đông IQF âm 40°C - Giữ trọn vị tươi nguyên múi
-                    </div>
-                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-                        Thưởng Thức Sầu Riêng <br>
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-durian-300 via-durian-400 to-amber-200">
-                            Béo Ngậy, Cơm Dẻo Hạt Lép
-                        </span> Mọi Lúc Mọi Nơi
-                    </h1>
-                    <p class="text-stone-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                        Tạm biệt nỗi lo mua phải vỏ dày, sầu sượng hay sầu nhúng hóa chất. Sầu riêng T&T tách múi sẵn, cấp đông sâu siêu tốc giữ nguyên độ ngọt thơm bùi như vừa hái tại vườn miền Tây.
-                    </p>
-
-                    <!-- Trust Checklist -->
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs sm:text-sm text-stone-200 font-medium">
-                        <div class="flex items-center gap-2">
-                            <i class="fa-solid fa-circle-check text-durian-400"></i>
-                            <span>100% Chín Cây Tự Nhiên</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fa-solid fa-circle-check text-durian-400"></i>
-                            <span>Bao Ăn 1 Đổi 1 Tận Nơi</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fa-solid fa-circle-check text-durian-400"></i>
-                            <span>Giao Hỏa Tốc Thùng Xốp</span>
-                        </div>
-                    </div>
-
-                    <!-- Call To Actions -->
-                    <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start pt-4">
-                        <a href="#dat-hang" class="w-full sm:w-auto px-8 py-4 rounded-2xl gold-gradient text-stone-950 font-black text-center text-base shadow-xl hover:shadow-2xl hover:scale-105 transition">
-                            <i class="fa-solid fa-cart-shopping mr-2"></i> ĐẶT HÀNG GIAO NHANH 2H
-                        </a>
-                        <a href="#san-pham" class="w-full sm:w-auto px-7 py-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-center text-base transition">
-                            Xem Bảng Giá Menu
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Right Column: Visual Showcase -->
-                <div class="lg:col-span-5 relative">
-                    <div class="relative mx-auto max-w-md lg:max-w-none">
-                        <!-- Glow effect -->
-                        <div class="absolute -inset-4 bg-durian-400/20 rounded-3xl blur-2xl"></div>
-                        
-                        <!-- Product Card Showcase -->
-                        <div class="relative bg-white/10 backdrop-blur-md p-4 rounded-3xl border border-white/20 shadow-2xl">
-                            <!-- Visual Representation via SVG / Pure CSS Art -->
-                            <div class="w-full h-80 rounded-2xl bg-gradient-to-b from-stone-900 to-leaf-900 flex flex-col items-center justify-center p-6 text-center border border-white/10 relative overflow-hidden">
-                                <div class="absolute inset-0 opacity-20 flex items-center justify-center text-9xl">
-                                    🧊
-                                </div>
-                                <div class="relative z-10 flex flex-col items-center">
-                                    <div class="text-7xl mb-3 animate-bounce">
-                                        🥭
-                                    </div>
-                                    <span class="text-durian-400 font-extrabold text-xl tracking-wider uppercase">Sầu Riêng Ri6 & Monthong</span>
-                                    <span class="text-white/80 text-sm mt-1">Đóng khay 500g hút chân không sang trọng</span>
-                                    <div class="mt-4 px-4 py-1.5 rounded-full bg-emerald-500/30 border border-emerald-400/40 text-emerald-200 text-xs font-semibold">
-                                        Nhiệt độ bảo quản: -18°C đến -22°C
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Quick Float Info -->
-                            <div class="mt-4 bg-stone-900/80 rounded-2xl p-4 flex items-center justify-between text-white border border-white/10">
-                                <div>
-                                    <p class="text-xs text-stone-400">Giá khuyến mãi từ</p>
-                                    <p class="text-2xl font-black text-durian-400">185.000đ <span class="text-xs text-stone-400 line-through font-normal">240.000đ</span></p>
-                                </div>
-                                <span class="px-3 py-1 bg-red-600 text-white text-xs font-bold rounded-lg uppercase tracking-wider">
-                                    Tiết kiệm 25%
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <div>
+          <span class="block text-xl font-extrabold text-brand-darkgreen tracking-tight">SẦU RIÊNG T&T</span>
+          <span class="block text-[11px] font-semibold text-brand-gold tracking-widest uppercase">Cấp đông sạch IQF</span>
         </div>
-    </section>
+      </a>
 
-    <!-- Problem & Solution Section -->
-    <section id="loi-ich" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-xs font-extrabold tracking-widest text-leaf-700 uppercase">Giải Pháp Thông Minh</h2>
-                <p class="text-3xl font-extrabold text-stone-900 sm:text-4xl mt-2">
-                    Vì Sao Bạn Nên Chọn Sầu Riêng Tách Hạt Cấp Đông?
-                </p>
-                <p class="text-stone-600 mt-4 text-base">
-                    Không còn phiền phức vì vỏ gai cồng kềnh, không còn rủi ro bổ ra gặp quả sượng, nhạt phếch hay cháy múi.
-                </p>
-            </div>
+      <!-- Menu máy tính -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-700">
+        <a href="#loi-ich" class="hover:text-brand-green transition">Ưu điểm</a>
+        <a href="#quy-trinh" class="hover:text-brand-green transition">Quy trình IQF</a>
+        <a href="#san-pham" class="hover:text-brand-green transition">Sản phẩm & Giá</a>
+        <a href="#facebook-feed" class="hover:text-brand-green transition">Nhật ký Fanpage</a>
+        <a href="#cam-ket" class="hover:text-brand-green transition">Chất lượng</a>
+      </nav>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Feature 1 -->
-                <div class="bg-amber-50/60 rounded-3xl p-8 border border-amber-200/60 hover:shadow-xl transition-all duration-300">
-                    <div class="w-14 h-14 rounded-2xl bg-amber-200 text-amber-800 flex items-center justify-center text-2xl mb-6 shadow-sm">
-                        <i class="fa-solid fa-weight-scale"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-stone-900 mb-3">100% Cơm Thịt - Không Mất Tiền Mua Vỏ</h3>
-                    <p class="text-stone-600 leading-relaxed text-sm">
-                        Vỏ sầu riêng chiếm tới 65 - 70% trọng lượng quả. Với sầu riêng TT, bạn chỉ trả tiền cho những múi thịt dày, thơm béo chất lượng nhất.
-                    </p>
-                </div>
-
-                <!-- Feature 2 -->
-                <div class="bg-amber-50/60 rounded-3xl p-8 border border-amber-200/60 hover:shadow-xl transition-all duration-300">
-                    <div class="w-14 h-14 rounded-2xl bg-leaf-600 text-white flex items-center justify-center text-2xl mb-6 shadow-sm">
-                        <i class="fa-solid fa-snowflake"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-stone-900 mb-3">Rã Đông 15 Phút Là Ăn Ngay</h3>
-                    <p class="text-stone-600 leading-relaxed text-sm">
-                        Để ngăn đá tủ lạnh, thèm lúc nào lấy ra rã đông lúc đó. Cắn một miếng cảm nhận độ mát lạnh, dẻo quánh tựa như kem custard hảo hạng.
-                    </p>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="bg-amber-50/60 rounded-3xl p-8 border border-amber-200/60 hover:shadow-xl transition-all duration-300">
-                    <div class="w-14 h-14 rounded-2xl bg-amber-400 text-stone-900 flex items-center justify-center text-2xl mb-6 shadow-sm">
-                        <i class="fa-solid fa-box-open"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-stone-900 mb-3">Hút Chân Không - Không Ám Mùi Tủ Lạnh</h3>
-                    <p class="text-stone-600 leading-relaxed text-sm">
-                        Đóng hộp khép kín chuyên dụng, ngăn hoàn toàn tình trạng bay mùi sang các thực phẩm khác, tiện mang đi picnic hoặc làm quà biếu tặng.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- IQF Process Section -->
-    <section id="quy-trinh" class="py-16 bg-stone-900 text-white relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-durian-400 font-bold uppercase tracking-widest text-xs">Tiêu Chuẩn Công Nghệ Cao</span>
-                <h2 class="text-3xl font-extrabold sm:text-4xl mt-2">Quy Trình Cấp Đông Sâu Đạt Chuẩn Xuất Khẩu</h2>
-                <p class="text-stone-400 mt-4 text-sm sm:text-base">
-                    Chúng tôi áp dụng công nghệ cấp đông nhanh từng cá thể (IQF) để bảo vệ nguyên vẹn cấu trúc múi sầu.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                <!-- Step 1 -->
-                <div class="bg-stone-800/80 p-6 rounded-2xl border border-stone-700 relative">
-                    <div class="text-durian-400 font-black text-3xl mb-2 opacity-50">01</div>
-                    <h4 class="text-lg font-bold mb-2 text-white">Thu Hái Đúng Độ Chín</h4>
-                    <p class="text-stone-400 text-xs sm:text-sm leading-relaxed">
-                        Chỉ chọn trái sầu chín già từ các nhà vườn VietGAP tại Tiền Giang, Bến Tre và Đắk Lắk. Tuyệt đối không hái non ép chín.
-                    </p>
-                </div>
-
-                <!-- Step 2 -->
-                <div class="bg-stone-800/80 p-6 rounded-2xl border border-stone-700 relative">
-                    <div class="text-durian-400 font-black text-3xl mb-2 opacity-50">02</div>
-                    <h4 class="text-lg font-bold mb-2 text-white">Bóc Múi Phòng Vô Trùng</h4>
-                    <p class="text-stone-400 text-xs sm:text-sm leading-relaxed">
-                        Đội ngũ thợ lành nghề tách từng múi cơm nguyên vẹn, loại bỏ triệt để múi lép, sượng hoặc khuyết tật.
-                    </p>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="bg-stone-800/80 p-6 rounded-2xl border border-stone-700 relative">
-                    <div class="text-durian-400 font-black text-3xl mb-2 opacity-50">03</div>
-                    <h4 class="text-lg font-bold mb-2 text-white">Cấp Đông Nhanh -40°C</h4>
-                    <p class="text-stone-400 text-xs sm:text-sm leading-relaxed">
-                        Hầm cấp đông siêu tốc giúp khóa chặt dinh dưỡng và hương vị thơm ngon mà không làm vỡ tế bào cơm sầu.
-                    </p>
-                </div>
-
-                <!-- Step 4 -->
-                <div class="bg-stone-800/80 p-6 rounded-2xl border border-stone-700 relative">
-                    <div class="text-durian-400 font-black text-3xl mb-2 opacity-50">04</div>
-                    <h4 class="text-lg font-bold mb-2 text-white">Hút Chân Không & Đóng Hộp</h4>
-                    <p class="text-stone-400 text-xs sm:text-sm leading-relaxed">
-                        Bảo quản trong túi PA hút chân không và khay kín sang trọng, lưu trữ ở nhiệt độ -18°C ổn định.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing & Products Section -->
-    <section id="san-pham" class="py-16 bg-amber-50/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-leaf-700 font-bold uppercase tracking-widest text-xs">Menu & Giá Bán</span>
-                <h2 class="text-3xl font-extrabold text-stone-900 sm:text-4xl mt-2">Bảng Giá Sầu Riêng Cấp Đông Hôm Nay</h2>
-                <p class="text-stone-600 mt-3 text-sm sm:text-base">Mức giá ưu đãi áp dụng duy nhất cho các đơn đặt hàng online trực tiếp trên website.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-                <!-- Card 1: Ri6 -->
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-amber-200 flex flex-col justify-between hover:shadow-xl transition-all">
-                    <div>
-                        <div class="flex justify-between items-start mb-4">
-                            <span class="px-3 py-1 bg-amber-100 text-amber-800 text-xs font-bold rounded-lg uppercase">Truyền Thống</span>
-                            <span class="text-xs text-stone-400">Khay 500g</span>
-                        </div>
-                        <h3 class="text-2xl font-black text-stone-900">Sầu Riêng Ri6</h3>
-                        <p class="text-stone-500 text-xs mt-1 mb-6">Màu vàng rực, vị ngọt sắc béo ngậy đặc trưng</p>
-                        
-                        <div class="mb-6">
-                            <span class="text-3xl font-black text-leaf-800">185.000đ</span>
-                            <span class="text-sm text-stone-400 line-through ml-2">230.000đ</span>
-                            <p class="text-xs text-emerald-600 font-semibold mt-1">Đã bao gồm hộp hút chân không</p>
-                        </div>
-
-                        <ul class="space-y-3 text-xs sm:text-sm text-stone-600 border-t border-stone-100 pt-6">
-                            <li class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-leaf-600"></i> Hạt lép 80-90%
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-leaf-600"></i> Cơm ráo, không chảy nước
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-leaf-600"></i> Ăn ngay sau 15p rã đông
-                            </li>
-                        </ul>
-                    </div>
-
-                    <button onclick="selectProduct('Sầu Riêng Ri6 500g', 185000)" class="mt-8 w-full py-3.5 bg-amber-100 hover:bg-durian-400 text-stone-900 font-bold rounded-xl text-sm transition">
-                        Chọn Mua Sản Phẩm
-                    </button>
-                </div>
-
-                <!-- Card 2: Monthong (Best Seller) -->
-                <div class="bg-white rounded-3xl p-8 shadow-xl border-2 border-durian-500 flex flex-col justify-between relative transform md:-translate-y-2">
-                    <div class="absolute -top-3.5 right-8 bg-leaf-700 text-white text-xs font-bold uppercase tracking-wider py-1 px-4 rounded-full shadow">
-                        Bán Chạy Nhất
-                    </div>
-                    <div>
-                        <div class="flex justify-between items-start mb-4">
-                            <span class="px-3 py-1 bg-durian-100 text-durian-800 text-xs font-bold rounded-lg uppercase">Cao Cấp</span>
-                            <span class="text-xs text-stone-400">Khay 500g</span>
-                        </div>
-                        <h3 class="text-2xl font-black text-stone-900">Sầu Riêng Monthong</h3>
-                        <p class="text-stone-500 text-xs mt-1 mb-6">Múi to khủng, hạt siêu lép, ngọt thanh tao</p>
-                        
-                        <div class="mb-6">
-                            <span class="text-3xl font-black text-leaf-800">205.000đ</span>
-                            <span class="text-sm text-stone-400 line-through ml-2">260.000đ</span>
-                            <p class="text-xs text-emerald-600 font-semibold mt-1">Chuẩn cơm vàng hạt lép loại 1</p>
-                        </div>
-
-                        <ul class="space-y-3 text-xs sm:text-sm text-stone-600 border-t border-stone-100 pt-6">
-                            <li class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-leaf-600"></i> Múi to dài, thịt dày cắn ngập răng
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-leaf-600"></i> Hương thơm dịu, béo ngậy vừa phải
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-leaf-600"></i> Thích hợp làm sinh tố, kem, bingsu
-                            </li>
-                        </ul>
-                    </div>
-
-                    <button onclick="selectProduct('Sầu Riêng Monthong 500g', 205000)" class="mt-8 w-full py-3.5 gold-gradient hover:shadow-lg text-stone-900 font-extrabold rounded-xl text-sm transition">
-                        Chọn Mua Sản Phẩm
-                    </button>
-                </div>
-
-                <!-- Card 3: Combo Gia Đình -->
-                <div class="bg-white rounded-3xl p-8 shadow-sm border border-amber-200 flex flex-col justify-between hover:shadow-xl transition-all">
-                    <div>
-                        <div class="flex justify-between items-start mb-4">
-                            <span class="px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-lg uppercase">Tiết Kiệm Nhất</span>
-                            <span class="text-xs text-stone-400">Combo 2kg</span>
-                        </div>
-                        <h3 class="text-2xl font-black text-stone-900">Combo Gia Đình (2Kg)</h3>
-                        <p class="text-stone-500 text-xs mt-1 mb-6">Tùy chọn mix Ri6 và Monthong theo ý thích</p>
-                        
-                        <div class="mb-6">
-                            <span class="text-3xl font-black text-leaf-800">740.000đ</span>
-                            <span class="text-sm text-stone-400 line-through ml-2">920.000đ</span>
-                            <p class="text-xs text-emerald-600 font-semibold mt-1">Freeship + Tặng kèm túi giữ nhiệt</p>
-                        </div>
-
-                        <ul class="space-y-3 text-xs sm:text-sm text-stone-600 border-t border-stone-100 pt-6">
-                            <li class="flex items-center gap-2">
-                                <i class="fa-solid fa-gift text-leaf-600"></i> Tặng ngay 01 túi giữ nhiệt bạc cao cấp
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <i class="fa-solid fa-truck-fast text-leaf-600"></i> Miễn phí giao hàng nội thành
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-leaf-600"></i> Thích hợp đãi tiệc, hội nhóm bạn bè
-                            </li>
-                        </ul>
-                    </div>
-
-                    <button onclick="selectProduct('Combo 2Kg (Ri6 + Monthong)', 740000)" class="mt-8 w-full py-3.5 bg-leaf-700 hover:bg-leaf-800 text-white font-bold rounded-xl text-sm transition">
-                        Chọn Mua Combo
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Commitments Section -->
-    <section id="cam-ket" class="py-16 bg-white border-y border-amber-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-leaf-700 font-bold uppercase tracking-widest text-xs">Uy Tín Tạo Niềm Tin</span>
-                <h2 class="text-3xl font-extrabold text-stone-900 mt-2">4 Cam Kết Vàng Từ Sầu Riêng T&T</h2>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="p-6 rounded-2xl bg-amber-50/50 border border-amber-200 text-center">
-                    <div class="w-12 h-12 rounded-xl bg-leaf-100 text-leaf-800 flex items-center justify-center text-xl mx-auto mb-4">
-                        <i class="fa-solid fa-shield-halved"></i>
-                    </div>
-                    <h4 class="font-bold text-stone-900 text-base mb-1">Không Hóa Chất</h4>
-                    <p class="text-stone-500 text-xs">Nói không với ngâm thuốc nhúng chín ép, đảm bảo an toàn tuyệt đối cho gia đình.</p>
-                </div>
-
-                <div class="p-6 rounded-2xl bg-amber-50/50 border border-amber-200 text-center">
-                    <div class="w-12 h-12 rounded-xl bg-leaf-100 text-leaf-800 flex items-center justify-center text-xl mx-auto mb-4">
-                        <i class="fa-solid fa-arrows-rotate"></i>
-                    </div>
-                    <h4 class="font-bold text-stone-900 text-base mb-1">1 Đổi 1 Tận Nơi</h4>
-                    <p class="text-stone-500 text-xs">Múi sượng, chua, nhạt hoặc đắng đền bù 100% đổi hộp mới không tốn phí phụ trợ.</p>
-                </div>
-
-                <div class="p-6 rounded-2xl bg-amber-50/50 border border-amber-200 text-center">
-                    <div class="w-12 h-12 rounded-xl bg-leaf-100 text-leaf-800 flex items-center justify-center text-xl mx-auto mb-4">
-                        <i class="fa-solid fa-temperature-arrow-down"></i>
-                    </div>
-                    <h4 class="font-bold text-stone-900 text-base mb-1">Đóng Thùng Cách Nhiệt</h4>
-                    <p class="text-stone-500 text-xs">Giao hàng đóng thùng xốp kèm đá gel chuyên dụng, đảm bảo múi sầu luôn đông cứng.</p>
-                </div>
-
-                <div class="p-6 rounded-2xl bg-amber-50/50 border border-amber-200 text-center">
-                    <div class="w-12 h-12 rounded-xl bg-leaf-100 text-leaf-800 flex items-center justify-center text-xl mx-auto mb-4">
-                        <i class="fa-solid fa-truck-ramp-box"></i>
-                    </div>
-                    <h4 class="font-bold text-stone-900 text-base mb-1">Giao Nhanh 2 Giờ</h4>
-                    <p class="text-stone-500 text-xs">Hỗ trợ giao hỏa tốc các quận nội thành chỉ trong 1-2 tiếng sau khi xác nhận đơn.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Feedback / Testimonials -->
-    <section id="feedback" class="py-16 bg-amber-50/40">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-leaf-700 font-bold uppercase tracking-widest text-xs">Cảm Nhận Thực Tế</span>
-                <h2 class="text-3xl font-extrabold text-stone-900 mt-2">Khách Hàng Nói Gì Về Chúng Tôi?</h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200">
-                    <div class="flex text-amber-400 text-xs mb-3 gap-1">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-stone-600 text-sm italic mb-4 leading-relaxed">
-                        "Mình mở quán kem bơ sầu riêng ở Bình Thạnh, đã lấy mối sầu Monthong cấp đông của T&T được 4 tháng nay. Hàng đều tăm tắp, không bị chảy nước dăm đá khi xay."
-                    </p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-durian-200 flex items-center justify-center text-stone-800 font-bold">
-                            T
-                        </div>
-                        <div>
-                            <p class="font-bold text-sm text-stone-900">Chị Thu Thảo</p>
-                            <p class="text-xs text-stone-400">Nhân viên văn phòng (TP.HCM)</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200">
-                    <div class="flex text-amber-400 text-xs mb-3 gap-1">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-stone-600 text-sm italic mb-4 leading-relaxed">
-                        "Mình mở quán kem bơ sầu riêng ở Bình Thạnh, đã lấy mối sầu Monthong cấp đông của TT được 4 tháng nay. Hàng đều tăm tắp, không bị chảy nước dăm đá khi xay."
-                    </p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-emerald-200 flex items-center justify-center text-stone-800 font-bold">
-                            M
-                        </div>
-                        <div>
-                            <p class="font-bold text-sm text-stone-900">Anh Minh Quân</p>
-                            <p class="text-xs text-stone-400">Chủ quán Tráng Miệng Bơ Sầu</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200">
-                    <div class="flex text-amber-400 text-xs mb-3 gap-1">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-stone-600 text-sm italic mb-4 leading-relaxed">
-                        "Mua combo 2kg gửi về quê cho bố mẹ ăn dần. Lúc nhận hàng đóng thùng xốp đá gel lạnh ngắt, múi nào múi nấy vàng ruộm, hạt nhỏ xíu. Chắc chắn sẽ ủng hộ tiếp!"
-                    </p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-amber-300 flex items-center justify-center text-stone-800 font-bold">
-                            H
-                        </div>
-                        <div>
-                            <p class="font-bold text-sm text-stone-900">Chị Hoàng Yến</p>
-                            <p class="text-xs text-stone-400">Khách hàng thân thiết</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Order Form Section -->
-    <section id="dat-hang" class="py-16 bg-leaf-900 text-white relative">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-10">
-                <span class="text-durian-400 font-bold uppercase tracking-widest text-xs">Đặt Mua Dễ Dàng</span>
-                <h2 class="text-3xl font-black sm:text-4xl mt-1">Form Đăng Ký Đặt Hàng Giao Tận Nơi</h2>
-                <p class="text-stone-300 text-sm mt-2">Điền thông tin bên dưới, nhân viên sẽ liên hệ xác nhận và giao hàng trong 2H.</p>
-            </div>
-
-            <!-- Form Card -->
-            <div class="bg-white text-stone-800 rounded-3xl p-6 sm:p-10 shadow-2xl border border-stone-100">
-                <form id="orderForm" onsubmit="handleOrderSubmit(event)" class="space-y-6">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-bold text-stone-700 uppercase mb-2">Họ và tên của bạn *</label>
-                            <input type="text" id="custName" required placeholder="Ví dụ: Nguyễn Văn A" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:ring-2 focus:ring-leaf-600 text-sm">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-stone-700 uppercase mb-2">Số điện thoại nhận hàng *</label>
-                            <input type="tel" id="custPhone" required placeholder="Ví dụ: 0912345678" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:ring-2 focus:ring-leaf-600 text-sm">
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-bold text-stone-700 uppercase mb-2">Địa chỉ giao hàng (Số nhà, đường, phường, quận/huyện) *</label>
-                        <input type="text" id="custAddress" required placeholder="Ví dụ: 123 Nguyễn Thị Minh Khai, Phường Bến Thành, Quận 1" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:ring-2 focus:ring-leaf-600 text-sm">
-                    </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-bold text-stone-700 uppercase mb-2">Chọn sản phẩm *</label>
-                            <select id="prodSelect" onchange="calculateTotal()" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:ring-2 focus:ring-leaf-600 text-sm bg-white">
-                                <option value="185000" data-name="Sầu Riêng Ri6 500g">Sầu Riêng Ri6 500g - 185.000đ</option>
-                                <option value="205000" data-name="Sầu Riêng Monthong 500g">Sầu Riêng Monthong 500g - 205.000đ</option>
-                                <option value="740000" data-name="Combo 2Kg (Ri6 + Monthong)">Combo 2Kg (Ri6 + Monthong) - 740.000đ</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-stone-700 uppercase mb-2">Số lượng đặt</label>
-                            <div class="flex items-center">
-                                <button type="button" onclick="changeQty(-1)" class="w-12 h-11 bg-stone-100 hover:bg-stone-200 rounded-l-xl font-bold text-stone-600 transition">-</button>
-                                <input type="number" id="prodQty" value="1" min="1" max="50" onchange="calculateTotal()" class="w-full h-11 border-y border-stone-200 text-center font-bold text-stone-800 text-sm focus:outline-none">
-                                <button type="button" onclick="changeQty(1)" class="w-12 h-11 bg-stone-100 hover:bg-stone-200 rounded-r-xl font-bold text-stone-600 transition">+</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-bold text-stone-700 uppercase mb-2">Ghi chú thêm (Không bắt buộc)</label>
-                        <textarea id="custNote" rows="2" placeholder="Ví dụ: Giao giờ hành chính, gọi trước khi đến 15 phút..." class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:ring-2 focus:ring-leaf-600 text-sm"></textarea>
-                    </div>
-
-                    <!-- Total Price Calculation -->
-                    <div class="p-4 bg-amber-50 rounded-2xl flex items-center justify-between border border-amber-200">
-                        <div>
-                            <span class="text-xs text-stone-500 font-medium">Tạm tính đơn hàng:</span>
-                            <p class="text-2xl font-black text-leaf-800" id="totalAmount">185.000đ</p>
-                        </div>
-                        <div class="text-right">
-                            <span class="inline-block px-2.5 py-1 bg-leaf-100 text-leaf-800 rounded-md text-xs font-bold">Thanh toán khi nhận hàng (COD)</span>
-                        </div>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <button type="submit" class="w-full py-4 rounded-2xl gold-gradient text-stone-950 font-black text-base shadow-xl hover:shadow-2xl hover:scale-[1.01] transition">
-                        <i class="fa-solid fa-paper-plane mr-2"></i> XÁC NHẬN ĐẶT HÀNG NGAY
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-stone-950 text-stone-400 py-12 text-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 pb-8 border-b border-stone-800">
-                <!-- Col 1 -->
-                <div>
-                    <span class="text-xl font-black tracking-tight text-white">CÔNG TY TNHH SẦU RIÊNG <span class="text-durian-400">T&T</span></span>
-                    <p class="text-xs text-stone-500 mt-1 uppercase font-semibold">SAU RIENG T&T COMPANY LIMITED</p>
-                    <p class="mt-3 text-stone-400 text-xs leading-relaxed">
-                        Chuyên cung cấp sầu riêng Ri6, Monthong tách múi cấp đông tiêu chuẩn xuất khẩu. Cam kết an toàn, không hóa chất bảo quản, bao ăn 1 đổi 1 tận nơi.
-                    </p>
-                    <p class="mt-2 text-xs text-stone-400">
-                        <span class="text-stone-300 font-semibold">Mã số thuế / ĐKKD:</span> 0319387288
-                    </p>
-                </div>
-                <!-- Col 2 -->
-                <div>
-                    <h5 class="text-white font-bold mb-3 text-xs uppercase tracking-wider">Thông Tin Liên Hệ</h5>
-                    <ul class="space-y-2 text-xs">
-                        <li class="flex items-start gap-2">
-                            <i class="fa-solid fa-location-dot mt-0.5 text-durian-400 shrink-0"></i>
-                            <span>Trụ sở chính: Số 81/1/2 Lê Thị Ngót, Ấp Bến Đò 1a, Xã Củ Chi, TP. Hồ Chí Minh, Việt Nam</span>
-                        </li>
-                        <li><i class="fa-solid fa-phone mr-2 text-durian-400"></i> Hotline / Zalo: <a href="tel:0328970702" class="text-durian-400 hover:underline">032 8970702</a></li>
-                        <li><i class="fa-solid fa-envelope mr-2 text-durian-400"></i> Email: <a href="mailto:Nguyenngoctandl@gmail.com" class="hover:text-durian-400 transition">Nguyenngoctandl@gmail.com</a></li>
-                        <li><i class="fa-solid fa-globe mr-2 text-durian-400"></i> Website: www.sauriengtt.com</li>
-                    </ul>
-                </div>
-                <!-- Col 3 -->
-                <div>
-                    <h5 class="text-white font-bold mb-3 text-xs uppercase tracking-wider">Chính Sách & Pháp Lý</h5>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="#" class="hover:text-durian-400 transition">Chính sách bảo hành đổi trả 1:1</a></li>
-                        <li><a href="#" class="hover:text-durian-400 transition">Chính sách giao nhận & đóng thùng giữ nhiệt</a></li>
-                        <li><a href="#" class="hover:text-durian-400 transition">Liên hệ hợp tác phân phối & lấy sỉ</a></li>
-                        <li class="pt-2 text-[11px] text-stone-500">Người đại diện pháp luật: Nguyễn Ngọc Tân (Giám đốc)</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
-                <p>© 2026 CÔNG TY TNHH SẦU RIÊNG T&T (www.sauriengtt.com). Giấy phép ĐKKD số: 0319387288 do Sở Kế hoạch và Đầu tư TP.HCM cấp.</p>
-                <p>Website tĩnh siêu tốc chạy trên GitHub Pages & Tên miền Mắt Bão.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Fixed Floating Contact & CTA Buttons -->
-    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
-        <!-- Zalo Button -->
-        <a href="https://zalo.me/0328970702" target="_blank" title="Chat Zalo ngay" class="w-13 h-13 p-3.5 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl shadow-2xl hover:scale-110 transition duration-300">
-            <i class="fa-solid fa-comment"></i>
+      <!-- Nút Hotline góc trên -->
+      <div class="flex items-center gap-3">
+        <a href="https://zalo.me/0328970702" target="_blank" rel="noopener noreferrer"
+           class="hidden sm:inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 text-brand-green hover:bg-emerald-100 font-semibold text-sm rounded-xl transition border border-emerald-200">
+          <i class="fas fa-comment-dots"></i> Chat Zalo
         </a>
-        <!-- Order Fast Button -->
-        <a href="#dat-hang" class="btn-floating w-13 h-13 p-3.5 rounded-full bg-leaf-700 text-white flex items-center justify-center text-xl shadow-2xl hover:scale-110 transition duration-300">
-            <i class="fa-solid fa-cart-shopping"></i>
+        <a href="#dat-hang" 
+           class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-gold hover:bg-brand-darkgold text-white font-bold text-sm rounded-xl shadow-md shadow-amber-500/20 hover:shadow-lg transition">
+          <i class="fas fa-shopping-basket"></i> Đặt Hàng Ngay
         </a>
+      </div>
     </div>
+  </header>
 
-    <!-- Success Modal Box (Never using alert) -->
-    <div id="successModal" class="fixed inset-0 bg-stone-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-md w-full p-8 text-center shadow-2xl transform transition-all animate-in fade-in zoom-in duration-300">
-            <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-3xl mx-auto mb-4">
-                <i class="fa-solid fa-check"></i>
-            </div>
-            <h3 class="text-2xl font-black text-stone-900 mb-2">Đặt Hàng Thành Công!</h3>
-            <p class="text-stone-600 text-sm leading-relaxed mb-6" id="modalMessage">
-                Cảm ơn bạn! Đơn hàng đã được lưu lại. Đội ngũ Sầu Riêng T&T sẽ gọi lại qua số điện thoại để xác nhận địa chỉ và thời gian giao hàng trong ít phút.
-            </p>
-            <button onclick="closeModal()" class="w-full py-3.5 bg-leaf-700 hover:bg-leaf-800 text-white font-bold rounded-xl text-sm transition">
-                Đóng thông báo
-            </button>
+  <!-- ==================== HERO BANNER ==================== -->
+  <section class="hero-bg text-white py-20 lg:py-28 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white/15 backdrop-blur border border-white/20 text-amber-300 mb-6">
+          <i class="fas fa-award"></i> Tinh hoa sầu riêng sạch – Tiện lợi quanh năm
+        </span>
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-6">
+          Sầu Riêng Tách Hạt Cấp Đông Sâu – <span class="text-amber-300">Trọn Vị Béo Ngậy</span> Như Vừa Rụng Tại Vườn
+        </h1>
+        <p class="text-lg sm:text-xl text-emerald-100 mb-8 leading-relaxed font-normal">
+          100% sầu riêng chín cây tự nhiên, múi vàng ươm, cơm dẻo hạt lép. Ứng dụng công nghệ cấp đông sâu IQF -40°C giữ trọn 99% hương vị, độ dẻo và dinh dưỡng, không chất bảo quản.
+        </p>
+
+        <!-- Nút CTA -->
+        <div class="flex flex-wrap items-center gap-4 mb-8">
+          <a href="#dat-hang" class="px-8 py-4 bg-brand-gold hover:bg-brand-darkgold text-white font-extrabold text-base rounded-2xl shadow-xl shadow-black/20 transition duration-200 inline-flex items-center gap-3">
+            <i class="fas fa-bolt text-yellow-200"></i> ĐẶT GIAO NHANH HÔM NAY
+          </a>
+          <a href="#san-pham" class="px-7 py-4 bg-white/10 hover:bg-white/20 backdrop-blur text-white font-semibold text-base rounded-2xl border border-white/30 transition duration-200 inline-flex items-center gap-2">
+            <i class="fas fa-tags"></i> Xem Bảng Giá & Menu
+          </a>
         </div>
+
+        <!-- Cam kết vàng nhỏ -->
+        <div class="pt-6 border-t border-emerald-700/60 flex flex-wrap gap-y-3 gap-x-6 text-xs sm:text-sm text-emerald-200">
+          <span class="flex items-center gap-2"><i class="fas fa-check-circle text-amber-300"></i> Đổi trả 1:1 nếu sượng, chua</span>
+          <span class="flex items-center gap-2"><i class="fas fa-truck-fast text-amber-300"></i> Giao hỏa tốc 2H thùng xốp giữ nhiệt</span>
+          <span class="flex items-center gap-2"><i class="fas fa-shield-halved text-amber-300"></i> An toàn chuẩn xuất khẩu</span>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- JavaScript Interactive Logic -->
-    <script>
-        // Calculate Total Price
-        function calculateTotal() {
-            const select = document.getElementById('prodSelect');
-            const unitPrice = parseInt(select.value);
-            const qtyInput = document.getElementById('prodQty');
-            let qty = parseInt(qtyInput.value) || 1;
-            
-            if (qty < 1) {
-                qty = 1;
-                qtyInput.value = 1;
-            }
+  <!-- ==================== SECTION: GIẢI PHÁP TIỆN LỢI ==================== -->
+  <section id="loi-ich" class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-green bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">
+          Lợi ích vượt trội
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3 tracking-tight">
+          Bạn Thích Ăn Sầu Riêng Nhưng Ngại Những Phiền Toái Này?
+        </h2>
+      </div>
 
-            const total = unitPrice * qty;
-            document.getElementById('totalAmount').innerText = total.toLocaleString('vi-VN') + 'đ';
-        }
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Vấn đề 1 -->
+        <div class="bg-amber-50/50 rounded-3xl p-8 border border-amber-100/80 shadow-sm hover:shadow-md transition">
+          <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-brand-darkgold flex items-center justify-center text-2xl mb-6">
+            <i class="fas fa-weight-hanging"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Sợ Mua Hớ Cơm Ít Vỏ Dày</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Mua sầu nguyên trái thì vỏ chiếm đến 70% trọng lượng, dễ gặp quả sượng, lép hoặc thối cuống. Với Sầu Riêng T&T, bạn chỉ trả tiền cho 100% phần múi sầu vàng óng hảo hạng.
+          </p>
+        </div>
 
-        // Qty increment/decrement
-        function changeQty(delta) {
-            const qtyInput = document.getElementById('prodQty');
-            let current = parseInt(qtyInput.value) || 1;
-            current += delta;
-            if (current >= 1 && current <= 50) {
-                qtyInput.value = current;
-                calculateTotal();
-            }
-        }
+        <!-- Vấn đề 2 -->
+        <div class="bg-amber-50/50 rounded-3xl p-8 border border-amber-100/80 shadow-sm hover:shadow-md transition">
+          <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-brand-darkgold flex items-center justify-center text-2xl mb-6">
+            <i class="fas fa-hand-holding-medical"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Gọt Vỏ Đau Tay & Ám Mùi</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Gai nhọn khó bổ, nhựa mủ dính tay và mùi sầu nồng nặc ám khắp tủ lạnh nhiều ngày. Sản phẩm của chúng tôi đóng khay hút chân không tiện lợi, mở nắp là thưởng thức ngay.
+          </p>
+        </div>
 
-        // Quick select product from menu cards
-        function selectProduct(productName, price) {
-            const select = document.getElementById('prodSelect');
-            for (let i = 0; i < select.options.length; i++) {
-                if (select.options[i].getAttribute('data-name').includes(productName) || select.options[i].text.includes(productName)) {
-                    select.selectedIndex = i;
-                    break;
-                }
-            }
-            calculateTotal();
-            // Scroll down to order form
-            document.getElementById('dat-hang').scrollIntoView({ behavior: 'smooth' });
-        }
+        <!-- Vấn đề 3 -->
+        <div class="bg-amber-50/50 rounded-3xl p-8 border border-amber-100/80 shadow-sm hover:shadow-md transition">
+          <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-brand-darkgold flex items-center justify-center text-2xl mb-6">
+            <i class="fas fa-snowflake"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Thèm Quanh Năm Mà Không Lo Hóa Chất</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Sầu trái vụ thường bị nhúng thuốc ép chín độc hại. Công nghệ cấp đông sâu IQF giúp lưu trữ sầu chín cây tự nhiên quanh năm, sẵn sàng để trong ngăn đá ăn mát lạnh như kem.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        // Form submission handler
-        function handleOrderSubmit(e) {
-            e.preventDefault();
+  <!-- ==================== SECTION: QUY TRÌNH CẤP ĐÔNG IQF ==================== -->
+  <section id="quy-trinh" class="py-16 sm:py-24 bg-gradient-to-b from-emerald-900 to-brand-darkgreen text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-300 bg-white/10 px-3.5 py-1 rounded-full border border-white/20">
+          Công nghệ tiên tiến
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold mt-3 tracking-tight">
+          Quy Trình Cấp Đông Sâu Giữ Trọn 99% Độ Tươi Ngon
+        </h2>
+        <p class="text-emerald-200 mt-3 text-sm sm:text-base">
+          Mỗi múi sầu riêng đều trải qua 4 công đoạn khép kín theo tiêu chuẩn vệ sinh nghiêm ngặt.
+        </p>
+      </div>
 
-            const name = document.getElementById('custName').value.trim();
-            const phone = document.getElementById('custPhone').value.trim();
-            const address = document.getElementById('custAddress').value.trim();
-            const select = document.getElementById('prodSelect');
-            const selectedProduct = select.options[select.selectedIndex].getAttribute('data-name');
-            const qty = document.getElementById('prodQty').value;
-            const total = document.getElementById('totalAmount').innerText;
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 relative">
+          <span class="text-4xl font-black text-amber-300/40 absolute top-4 right-4">01</span>
+          <h3 class="text-lg font-bold mb-2">Tuyển Chọn Tại Vườn</h3>
+          <p class="text-sm text-emerald-100 leading-relaxed">
+            Thu hoạch 100% sầu riêng già chín cây rụng tự nhiên, tuyển chọn từng quả đủ tuổi, tuyệt đối không hái non.
+          </p>
+        </div>
 
-            // Update modal text
-            const msg = `Cảm ơn anh/chị <strong>${name}</strong>!<br>Đơn hàng <strong>${qty}x ${selectedProduct}</strong> (Tổng: ${total}) giao đến <strong>${address}</strong> đã được ghi nhận. Chúng tôi sẽ gọi xác nhận qua số điện thoại <strong>${phone}</strong> ngay!`;
-            document.getElementById('modalMessage').innerHTML = msg;
+        <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 relative">
+          <span class="text-4xl font-black text-amber-300/40 absolute top-4 right-4">02</span>
+          <h3 class="text-lg font-bold mb-2">Bóc Múi Vô Trùng</h3>
+          <p class="text-sm text-emerald-100 leading-relaxed">
+            Bóc tách múi trong phòng lạnh vô trùng, giữ nguyên hình dạng cơm sầu vàng óng, không dập nát hay nhiễm khuẩn.
+          </p>
+        </div>
 
-            // Show custom modal box
-            document.getElementById('successModal').classList.remove('hidden');
+        <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 relative">
+          <span class="text-4xl font-black text-amber-300/40 absolute top-4 right-4">03</span>
+          <h3 class="text-lg font-bold mb-2">Cấp Đông Nhanh IQF (-40°C)</h3>
+          <p class="text-sm text-emerald-100 leading-relaxed">
+            Công nghệ cấp đông siêu tốc khiến tinh thể đá cực nhỏ, không làm rách tế bào sầu, chống chảy nước khi rã đông.
+          </p>
+        </div>
 
-            // Reset form
-            document.getElementById('orderForm').reset();
-            calculateTotal();
-        }
+        <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 relative">
+          <span class="text-4xl font-black text-amber-300/40 absolute top-4 right-4">04</span>
+          <h3 class="text-lg font-bold mb-2">Hút Chân Không Xuất Khẩu</h3>
+          <p class="text-sm text-emerald-100 leading-relaxed">
+            Đóng hộp/túi chuyên dụng dán màng seal kín, bảo quản ngăn đá lên đến 12 tháng mà không ám mùi tủ lạnh.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        // Close modal
-        function closeModal() {
-            document.getElementById('successModal').classList.add('hidden');
-        }
-
-        // Initialize total on load
-        window.onload = function() {
-            calculateTotal();
-        };
-    </script>
-</body>
-</html>
+  <!-- ==================== SECTION: MENU SẢN PHẨM & BẢNG GIÁ =================
