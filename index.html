@@ -1,223 +1,90 @@
 <!DOCTYPE html>
 <html lang="vi" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sầu Riêng T&T - Sầu Riêng Tách Hạt Cấp Đông Chuẩn Xuất Khẩu</title>
-  <meta name="description" content="Chuyên cung cấp sầu riêng Ri6, Monthong chín cây tách múi cấp đông sâu IQF -40°C. Thơm béo dẻo ngọt, giữ trọn 99% dinh dưỡng, giao hàng hỏa tốc trong 2h.">
-  
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              gold: '#F59E0B',
-              darkgold: '#D97706',
-              green: '#047857',
-              darkgreen: '#064E3B',
-              lightgreen: '#ECFDF5',
-              cream: '#FFFBEB'
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sầu Riêng T&T - Công Ty TNHH Sầu Riêng T&T | Chuẩn Xuất Khẩu</title>
+    <!-- Meta SEO & Social Sharing -->
+    <meta name="description" content="Sầu riêng tách hạt cấp đông siêu tốc IQF -40°C từ Công Ty TNHH Sầu Riêng T&T. 100% chín cây tự nhiên, múi vàng cơm dẻo, ngọt béo đậm đà, bao ăn 1 đổi 1 tận nơi.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        durian: {
+                            50: '#fefce8',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                            800: '#854d0e',
+                            900: '#713f12',
+                        },
+                        leaf: {
+                            600: '#15803d',
+                            700: '#166534',
+                            800: '#14532d',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
             }
-          }
         }
-      }
-    }
-  </script>
+    </script>
 
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <!-- Google Fonts: Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-    .hero-bg {
-      background: linear-gradient(135deg, rgba(6, 78, 59, 0.94) 0%, rgba(4, 120, 87, 0.88) 100%),
-                  url('https://images.unsplash.com/photo-1587393855524-087f83d95bc9?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-    }
-  </style>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #facc15 0%, #ca8a04 100%);
+        }
+        .hero-pattern {
+            background-color: #14532d;
+            background-image: radial-gradient(rgba(250, 204, 21, 0.15) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        /* Custom floating button animation */
+        @keyframes pulse-custom {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(22, 101, 52, 0.6); }
+            50% { transform: scale(1.05); box-shadow: 0 0 0 14px rgba(22, 101, 52, 0); }
+        }
+        .btn-floating {
+            animation: pulse-custom 2.2s infinite;
+        }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased selection:bg-brand-gold selection:text-white">
+<body class="bg-amber-50/40 text-stone-800 antialiased selection:bg-durian-400 selection:text-stone-900">
 
-  <!-- ==================== FACEBOOK JAVASCRIPT SDK ==================== -->
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" 
-    src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v19.0">
-  </script>
+    <!-- FACEBOOK JAVASCRIPT SDK -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" 
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v19.0">
+    </script>
 
-  <!-- ==================== HEADER / THANH ĐIỀU HƯỚNG ==================== -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur shadow-sm border-b border-gray-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-3">
-        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-brand-darkgreen to-brand-green flex items-center justify-center text-amber-300 text-xl font-black shadow-md">
-          <i class="fas fa-seedling"></i>
-        </div>
-        <div>
-          <span class="block text-xl font-extrabold text-brand-darkgreen tracking-tight">SẦU RIÊNG T&T</span>
-          <span class="block text-[11px] font-semibold text-brand-gold tracking-widest uppercase">Cấp đông sạch IQF</span>
-        </div>
-      </a>
-
-      <!-- Menu máy tính -->
-      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-700">
-        <a href="#loi-ich" class="hover:text-brand-green transition">Ưu điểm</a>
-        <a href="#quy-trinh" class="hover:text-brand-green transition">Quy trình IQF</a>
-        <a href="#san-pham" class="hover:text-brand-green transition">Sản phẩm & Giá</a>
-        <a href="#facebook-feed" class="hover:text-brand-green transition">Nhật ký Fanpage</a>
-        <a href="#cam-ket" class="hover:text-brand-green transition">Chất lượng</a>
-      </nav>
-
-      <!-- Nút Hotline góc trên -->
-      <div class="flex items-center gap-3">
-        <a href="https://zalo.me/0328970702" target="_blank" rel="noopener noreferrer"
-           class="hidden sm:inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 text-brand-green hover:bg-emerald-100 font-semibold text-sm rounded-xl transition border border-emerald-200">
-          <i class="fas fa-comment-dots"></i> Chat Zalo
-        </a>
-        <a href="#dat-hang" 
-           class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-gold hover:bg-brand-darkgold text-white font-bold text-sm rounded-xl shadow-md shadow-amber-500/20 hover:shadow-lg transition">
-          <i class="fas fa-shopping-basket"></i> Đặt Hàng Ngay
-        </a>
-      </div>
+    <!-- Top Notice Bar -->
+    <div class="bg-durian-400 text-stone-900 text-xs sm:text-sm font-semibold py-2 px-4 text-center">
+        <span>⚡ ƯU ĐÃI TUẦN LỄ RA MẮT: Giảm ngay 10% đơn đầu tiên + Tặng kèm túi giữ nhiệt cho đơn từ 2kg!</span>
     </div>
-  </header>
 
-  <!-- ==================== HERO BANNER ==================== -->
-  <section class="hero-bg text-white py-20 lg:py-28 relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="max-w-3xl">
-        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white/15 backdrop-blur border border-white/20 text-amber-300 mb-6">
-          <i class="fas fa-award"></i> Tinh hoa sầu riêng sạch – Tiện lợi quanh năm
-        </span>
-        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-6">
-          Sầu Riêng Tách Hạt Cấp Đông Sâu – <span class="text-amber-300">Trọn Vị Béo Ngậy</span> Như Vừa Rụng Tại Vườn
-        </h1>
-        <p class="text-lg sm:text-xl text-emerald-100 mb-8 leading-relaxed font-normal">
-          100% sầu riêng chín cây tự nhiên, múi vàng ươm, cơm dẻo hạt lép. Ứng dụng công nghệ cấp đông sâu IQF -40°C giữ trọn 99% hương vị, độ dẻo và dinh dưỡng, không chất bảo quản.
-        </p>
-
-        <!-- Nút CTA -->
-        <div class="flex flex-wrap items-center gap-4 mb-8">
-          <a href="#dat-hang" class="px-8 py-4 bg-brand-gold hover:bg-brand-darkgold text-white font-extrabold text-base rounded-2xl shadow-xl shadow-black/20 transition duration-200 inline-flex items-center gap-3">
-            <i class="fas fa-bolt text-yellow-200"></i> ĐẶT GIAO NHANH HÔM NAY
-          </a>
-          <a href="#san-pham" class="px-7 py-4 bg-white/10 hover:bg-white/20 backdrop-blur text-white font-semibold text-base rounded-2xl border border-white/30 transition duration-200 inline-flex items-center gap-2">
-            <i class="fas fa-tags"></i> Xem Bảng Giá & Menu
-          </a>
-        </div>
-
-        <!-- Cam kết vàng nhỏ -->
-        <div class="pt-6 border-t border-emerald-700/60 flex flex-wrap gap-y-3 gap-x-6 text-xs sm:text-sm text-emerald-200">
-          <span class="flex items-center gap-2"><i class="fas fa-check-circle text-amber-300"></i> Đổi trả 1:1 nếu sượng, chua</span>
-          <span class="flex items-center gap-2"><i class="fas fa-truck-fast text-amber-300"></i> Giao hỏa tốc 2H thùng xốp giữ nhiệt</span>
-          <span class="flex items-center gap-2"><i class="fas fa-shield-halved text-amber-300"></i> An toàn chuẩn xuất khẩu</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== SECTION: GIẢI PHÁP TIỆN LỢI ==================== -->
-  <section id="loi-ich" class="py-16 sm:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="text-xs font-bold uppercase tracking-widest text-brand-green bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">
-          Lợi ích vượt trội
-        </span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3 tracking-tight">
-          Bạn Thích Ăn Sầu Riêng Nhưng Ngại Những Phiền Toái Này?
-        </h2>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Vấn đề 1 -->
-        <div class="bg-amber-50/50 rounded-3xl p-8 border border-amber-100/80 shadow-sm hover:shadow-md transition">
-          <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-brand-darkgold flex items-center justify-center text-2xl mb-6">
-            <i class="fas fa-weight-hanging"></i>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-3">Sợ Mua Hớ Cơm Ít Vỏ Dày</h3>
-          <p class="text-gray-600 text-sm leading-relaxed">
-            Mua sầu nguyên trái thì vỏ chiếm đến 70% trọng lượng, dễ gặp quả sượng, lép hoặc thối cuống. Với Sầu Riêng T&T, bạn chỉ trả tiền cho 100% phần múi sầu vàng óng hảo hạng.
-          </p>
-        </div>
-
-        <!-- Vấn đề 2 -->
-        <div class="bg-amber-50/50 rounded-3xl p-8 border border-amber-100/80 shadow-sm hover:shadow-md transition">
-          <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-brand-darkgold flex items-center justify-center text-2xl mb-6">
-            <i class="fas fa-hand-holding-medical"></i>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-3">Gọt Vỏ Đau Tay & Ám Mùi</h3>
-          <p class="text-gray-600 text-sm leading-relaxed">
-            Gai nhọn khó bổ, nhựa mủ dính tay và mùi sầu nồng nặc ám khắp tủ lạnh nhiều ngày. Sản phẩm của chúng tôi đóng khay hút chân không tiện lợi, mở nắp là thưởng thức ngay.
-          </p>
-        </div>
-
-        <!-- Vấn đề 3 -->
-        <div class="bg-amber-50/50 rounded-3xl p-8 border border-amber-100/80 shadow-sm hover:shadow-md transition">
-          <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-brand-darkgold flex items-center justify-center text-2xl mb-6">
-            <i class="fas fa-snowflake"></i>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-3">Thèm Quanh Năm Mà Không Lo Hóa Chất</h3>
-          <p class="text-gray-600 text-sm leading-relaxed">
-            Sầu trái vụ thường bị nhúng thuốc ép chín độc hại. Công nghệ cấp đông sâu IQF giúp lưu trữ sầu chín cây tự nhiên quanh năm, sẵn sàng để trong ngăn đá ăn mát lạnh như kem.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== SECTION: QUY TRÌNH CẤP ĐÔNG IQF ==================== -->
-  <section id="quy-trinh" class="py-16 sm:py-24 bg-gradient-to-b from-emerald-900 to-brand-darkgreen text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="text-xs font-bold uppercase tracking-widest text-amber-300 bg-white/10 px-3.5 py-1 rounded-full border border-white/20">
-          Công nghệ tiên tiến
-        </span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold mt-3 tracking-tight">
-          Quy Trình Cấp Đông Sâu Giữ Trọn 99% Độ Tươi Ngon
-        </h2>
-        <p class="text-emerald-200 mt-3 text-sm sm:text-base">
-          Mỗi múi sầu riêng đều trải qua 4 công đoạn khép kín theo tiêu chuẩn vệ sinh nghiêm ngặt.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 relative">
-          <span class="text-4xl font-black text-amber-300/40 absolute top-4 right-4">01</span>
-          <h3 class="text-lg font-bold mb-2">Tuyển Chọn Tại Vườn</h3>
-          <p class="text-sm text-emerald-100 leading-relaxed">
-            Thu hoạch 100% sầu riêng già chín cây rụng tự nhiên, tuyển chọn từng quả đủ tuổi, tuyệt đối không hái non.
-          </p>
-        </div>
-
-        <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 relative">
-          <span class="text-4xl font-black text-amber-300/40 absolute top-4 right-4">02</span>
-          <h3 class="text-lg font-bold mb-2">Bóc Múi Vô Trùng</h3>
-          <p class="text-sm text-emerald-100 leading-relaxed">
-            Bóc tách múi trong phòng lạnh vô trùng, giữ nguyên hình dạng cơm sầu vàng óng, không dập nát hay nhiễm khuẩn.
-          </p>
-        </div>
-
-        <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 relative">
-          <span class="text-4xl font-black text-amber-300/40 absolute top-4 right-4">03</span>
-          <h3 class="text-lg font-bold mb-2">Cấp Đông Nhanh IQF (-40°C)</h3>
-          <p class="text-sm text-emerald-100 leading-relaxed">
-            Công nghệ cấp đông siêu tốc khiến tinh thể đá cực nhỏ, không làm rách tế bào sầu, chống chảy nước khi rã đông.
-          </p>
-        </div>
-
-        <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 relative">
-          <span class="text-4xl font-black text-amber-300/40 absolute top-4 right-4">04</span>
-          <h3 class="text-lg font-bold mb-2">Hút Chân Không Xuất Khẩu</h3>
-          <p class="text-sm text-emerald-100 leading-relaxed">
-            Đóng hộp/túi chuyên dụng dán màng seal kín, bảo quản ngăn đá lên đến 12 tháng mà không ám mùi tủ lạnh.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== SECTION: MENU SẢN PHẨM & BẢNG GIÁ =================
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-amber-100 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to
