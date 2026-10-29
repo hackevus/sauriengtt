@@ -35,12 +35,12 @@
 
     <!-- Header Navigation -->
     <header class="sticky top-0 z-40 bg-white/95 backdrop-blur shadow-sm border-b border-amber-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-3">
-                <img src="logo.jpg" alt="Logo Sầu Riêng T&T" class="w-12 h-12 object-contain rounded-xl shadow-sm border border-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3.5 group">
+                <img src="logo.jpg" alt="Logo Sầu Riêng T&T" class="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-2xl shadow-sm border border-stone-100 p-1 bg-white group-hover:scale-105 transition duration-300">
                 <div>
-                    <span class="text-xl sm:text-2xl font-black text-leaf-800 tracking-tight">SẦU RIÊNG <span class="text-durian-600">T&T</span></span>
-                    <p class="text-[10px] tracking-widest uppercase font-semibold text-stone-500">Sầu Riêng Sống Tách Hạt IQF</p>
+                    <span class="text-xl sm:text-2xl font-black text-leaf-800 tracking-tight block">SẦU RIÊNG <span class="text-durian-600">T&T</span></span>
+                    <p class="text-[10px] sm:text-xs tracking-widest uppercase font-semibold text-stone-500">Sầu Riêng Sống Tách Hạt IQF</p>
                 </div>
             </a>
             <nav class="hidden lg:flex items-center gap-5 text-sm font-bold text-stone-600">
@@ -52,11 +52,11 @@
                 <a href="#feedback" class="hover:text-leaf-700 transition">Đánh giá</a>
             </nav>
             <div class="flex items-center gap-3">
-                <a href="https://zalo.me/0384665225" target="_blank" class="hidden sm:flex items-center gap-2 bg-amber-100 hover:bg-amber-200 px-4 py-2 rounded-xl font-bold text-xs sm:text-sm text-stone-800 transition">
+                <a href="https://zalo.me/0384665225" target="_blank" class="hidden sm:flex items-center gap-2 bg-amber-100 hover:bg-amber-200 px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm text-stone-800 transition">
                     <i class="fa-solid fa-comment-dots text-leaf-700"></i>
                     <span>Zalo: 0384 665 225</span>
                 </a>
-                <a href="#dat-hang" class="gold-gradient text-stone-950 font-black px-4 py-2.5 rounded-xl text-xs sm:text-sm shadow hover:shadow-lg transition">
+                <a href="#dat-hang" class="gold-gradient text-stone-950 font-black px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm shadow hover:shadow-lg transition">
                     Đặt Mua Ngay
                 </a>
             </div>
@@ -126,24 +126,27 @@
         </div>
     </section>
 
-    <!-- Cẩm nang ẩm thực -->
+    <!-- Cẩm nang ẩm thực: CHỈ HIỂN THỊ HÌNH ẢNH TRỌN VẸN RÕ RÀNG -->
     <section id="che-bien" class="py-16 bg-stone-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <span class="text-durian-400 font-bold uppercase tracking-widest text-xs">Cẩm Nang Ẩm Thực T&T</span>
             <h2 class="text-3xl font-extrabold mt-2">Đa Dạng Chế Biến Món Ngon Chuẩn Vị</h2>
             <p class="mt-2 text-xs sm:text-sm text-amber-200 font-semibold">⚠️ Sơ chế bắt buộc: Rã đông tự nhiên từ 15 – 20 phút trước khi nấu</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 text-left">
-                <div class="bg-stone-800 p-6 rounded-2xl border border-stone-700">
-                    <h3 class="text-lg font-bold text-durian-400 mb-2"><i class="fa-solid fa-fire mr-1.5"></i> 1. Nấu Lẩu Ngọt Thanh</h3>
-                    <p class="text-xs text-stone-300 leading-relaxed">Đợi nước lẩu gà, vịt hoặc lẩu bò sôi bùng và thịt mềm rồi mới thả múi sầu vào. Nấu nhỏ lửa thêm 3 - 5 phút cho múi sầu bở mềm là dùng ngay.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+                <!-- 1. Nấu Lẩu -->
+                <div class="rounded-3xl overflow-hidden border border-stone-700 bg-stone-800 shadow-xl hover:border-durian-400 hover:shadow-2xl transition duration-300">
+                    <img src="sr_lau.jpg" alt="Cẩm nang nấu lẩu Sầu Riêng T&T" class="w-full h-auto object-contain block hover:scale-[1.02] transition duration-500">
                 </div>
-                <div class="bg-stone-800 p-6 rounded-2xl border border-stone-700">
-                    <h3 class="text-lg font-bold text-durian-400 mb-2"><i class="fa-solid fa-temperature-arrow-up mr-1.5"></i> 2. Nướng Than / Nồi Chiên</h3>
-                    <p class="text-xs text-stone-300 leading-relaxed">Nướng nồi chiên không dầu ở nhiệt độ 180°C trong 10 - 12 phút (quét thêm lớp bơ/mật ong nếu thích). Vỏ ngoài xém giòn, bên trong dẻo bùi béo ngậy.</p>
+
+                <!-- 2. Nướng Than / Nồi Chiên -->
+                <div class="rounded-3xl overflow-hidden border border-stone-700 bg-stone-800 shadow-xl hover:border-durian-400 hover:shadow-2xl transition duration-300">
+                    <img src="sr_nuong.jpg" alt="Cẩm nang nướng Sầu Riêng T&T" class="w-full h-auto object-contain block hover:scale-[1.02] transition duration-500">
                 </div>
-                <div class="bg-stone-800 p-6 rounded-2xl border border-stone-700">
-                    <h3 class="text-lg font-bold text-durian-400 mb-2"><i class="fa-solid fa-bowl-rice mr-1.5"></i> 3. Hấp Lá Dứa & Kho Thịt</h3>
-                    <p class="text-xs text-stone-300 leading-relaxed">Lót lá dứa hấp cách thủy 5 - 7 phút hoặc thả vào nồi thịt kho ba chỉ 7 phút cuối. Cơm sầu ngấm nước sốt béo ngậy cực kỳ đưa cơm.</p>
+
+                <!-- 3. Hấp Lá Dứa & Kho Thịt -->
+                <div class="rounded-3xl overflow-hidden border border-stone-700 bg-stone-800 shadow-xl hover:border-durian-400 hover:shadow-2xl transition duration-300">
+                    <img src="sr_hap.jpg" alt="Cẩm nang hấp lá dứa và kho thịt Sầu Riêng T&T" class="w-full h-auto object-contain block hover:scale-[1.02] transition duration-500">
                 </div>
             </div>
         </div>
@@ -412,9 +415,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 pt-6 gap-3">
+            <div class="flex flex-col sm:flex-row items-center justify-center text-xs text-stone-500 pt-6">
                 <p>© 2026 CÔNG TY TNHH SẦU RIÊNG T&T (www.sauriengtt.com). GPKD số: 0319387288.</p>
-                <p>Website tĩnh GitHub Pages kết nối tên miền Mắt Bão.</p>
             </div>
         </div>
     </footer>
@@ -450,7 +452,6 @@
 
     <!-- Interactive Script (Google Form Action) -->
     <script>
-        // CẤU HÌNH LIÊN KẾT GOOGLE FORM CHÍNH XÁC
         const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSee9LM7UiqWmjcoouyyNFy3rMM4hlO-Vi1fOiRUKBOdGinwoQ/formResponse";
         const ENTRY_NAME    = "entry.381308128";
         const ENTRY_PHONE   = "entry.894832290";
